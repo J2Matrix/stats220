@@ -8,4 +8,4 @@ A little about me:
 - I am taking STATS 220 because I want to expand my knowledge of programming.
 - I am interested in learning about more programming languages.
 
-A meme that captures how I currently feel about my university studies is ![](https://tenor.com/view/the-simpsons-homer-exiting-uncomfortable-leaving-now-gif-2537108106024763419)
+A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
