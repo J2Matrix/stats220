@@ -22,8 +22,9 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
   }
 }
 body {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  text-align: center;
 }
 h1 {
   text-align: center;
@@ -31,13 +32,18 @@ h1 {
 h2 {
   text-align: center;
 }
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 ```
 
 ## Project 2 (Advertisement colours) for STATS 220
 
 # **BAR CHARTS**
 
-```{r fig.width = 12, fig.height = 12}
+```{r fig.width = 8, fig.height = 8}
 # fig.width = 12, fig.height = 12
 ### COMMENTED SECTION ###
 # import librarie(s)
@@ -68,7 +74,8 @@ latest_data_sep <- latest_data %>%
 ```
 
 ## Primary Colours
-```{r fig.width = 12, fig.height = 12}
+
+```{r fig.width = 8, fig.height = 8}
 # bar charts
 # making the simple correlation graphs
 #primary_colours_graph
@@ -78,14 +85,16 @@ latest_data_sep %>% ggplot() + geom_bar(aes(primary_colours, fill = primary_effe
 ```
 
 ## Secondary Colours
-```{r fig.width = 12, fig.height = 12}
+
+```{r fig.width = 8, fig.height = 8}
 #secondary_colours_graph
 latest_data_sep %>% ggplot() + geom_bar(aes(secondary_colours, fill = secondary_effective))+ 
   labs(title = "Secondary colours amount vs effectiveness", x="Secondary colours", y="Count", fill="Is the secondary colour\neffective in drawing attention?")
 ```
 
 ## Colour Schemes
-```{r fig.width = 12, fig.height = 12}
+
+```{r fig.width = 8, fig.height = 8}
 #colour_schemes_graph
 latest_data_sep %>% ggplot() + geom_bar(aes(colour_schemes, fill = colour_schemes_effective))+ 
   labs(title = "Colour schemes amount vs effectiveness", x="Colour schemes", y="Count", fill="Is the colour scheme\neffective in drawing attention?")
